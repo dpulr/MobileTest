@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6379790028A7E68600FFCAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637978FF28A7E68600FFCAE9 /* AppDelegate.swift */; };
+		6379790228A7E68600FFCAE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379790128A7E68600FFCAE9 /* SceneDelegate.swift */; };
+		6379790928A7E68A00FFCAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6379790828A7E68A00FFCAE9 /* Assets.xcassets */; };
+		6379790C28A7E68A00FFCAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6379790A28A7E68A00FFCAE9 /* LaunchScreen.storyboard */; };
+		6379791728A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379791628A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestTests.swift */; };
+		6379792128A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379792028A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITests.swift */; };
+		6379792328A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379792228A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITestsLaunchTests.swift */; };
+		6379793128A80CDB00FFCAE9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793028A80CDB00FFCAE9 /* PostModel.swift */; };
+		6379793628A8141B00FFCAE9 /* JSONAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793528A8141B00FFCAE9 /* JSONAPI.swift */; };
+		6379793928A819C700FFCAE9 /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793828A819C700FFCAE9 /* ErrorExtensions.swift */; };
+		6379793B28A81A3900FFCAE9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793A28A81A3900FFCAE9 /* Extensions.swift */; };
+		6379793D28A81A9B00FFCAE9 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793C28A81A9B00FFCAE9 /* PostsViewController.swift */; };
+		6379794028A81B0700FFCAE9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379793F28A81B0700FFCAE9 /* Post.swift */; };
+		6379794228A8228600FFCAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6379794128A8228600FFCAE9 /* Main.storyboard */; };
+		6379794428A8236600FFCAE9 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6379794328A8236600FFCAE9 /* PostTableViewCell.xib */; };
+		6379794628A823BA00FFCAE9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379794528A823BA00FFCAE9 /* PostTableViewCell.swift */; };
+		6379794928A82CC900FFCAE9 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379794828A82CC900FFCAE9 /* PostDetailViewController.swift */; };
+		6379794B28A839F200FFCAE9 /* PostDetailTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379794A28A839F200FFCAE9 /* PostDetailTitleTableViewCell.swift */; };
+		6379794D28A839FC00FFCAE9 /* PostCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379794C28A839FC00FFCAE9 /* PostCommentTableViewCell.swift */; };
+		6379794F28A83A0700FFCAE9 /* PostCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6379794E28A83A0700FFCAE9 /* PostCommentTableViewCell.xib */; };
+		6379795128A83A1100FFCAE9 /* PostDetailTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6379795028A83A1100FFCAE9 /* PostDetailTitleTableViewCell.xib */; };
+		6379795328A84A9000FFCAE9 /* PostDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6379795228A84A9000FFCAE9 /* PostDescriptionTableViewCell.xib */; };
+		6379795528A84AB900FFCAE9 /* PostDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379795428A84AB900FFCAE9 /* PostDescriptionTableViewCell.swift */; };
+		6379795728A84DAA00FFCAE9 /* PostUserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6379795628A84DAA00FFCAE9 /* PostUserInfoTableViewCell.xib */; };
+		6379795928A84DDE00FFCAE9 /* PostUserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379795828A84DDE00FFCAE9 /* PostUserInfoTableViewCell.swift */; };
+		6379795B28A8502100FFCAE9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6379795A28A8502100FFCAE9 /* UserModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6379791328A7E68A00FFCAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637978F428A7E68600FFCAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637978FB28A7E68600FFCAE9;
+			remoteInfo = "DRPR Mobile Tech Test";
+		};
+		6379791D28A7E68A00FFCAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637978F428A7E68600FFCAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637978FB28A7E68600FFCAE9;
+			remoteInfo = "DRPR Mobile Tech Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		637978FC28A7E68600FFCAE9 /* DRPR Mobile Tech Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DRPR Mobile Tech Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637978FF28A7E68600FFCAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6379790128A7E68600FFCAE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6379790828A7E68A00FFCAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6379790B28A7E68A00FFCAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6379790D28A7E68A00FFCAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6379791228A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRPR Mobile Tech TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6379791628A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRPR_Mobile_Tech_TestTests.swift; sourceTree = "<group>"; };
+		6379791C28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRPR Mobile Tech TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6379792028A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRPR_Mobile_Tech_TestUITests.swift; sourceTree = "<group>"; };
+		6379792228A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRPR_Mobile_Tech_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6379793028A80CDB00FFCAE9 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		6379793528A8141B00FFCAE9 /* JSONAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAPI.swift; sourceTree = "<group>"; };
+		6379793828A819C700FFCAE9 /* ErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
+		6379793A28A81A3900FFCAE9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6379793C28A81A9B00FFCAE9 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		6379793F28A81B0700FFCAE9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6379794128A8228600FFCAE9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6379794328A8236600FFCAE9 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		6379794528A823BA00FFCAE9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		6379794828A82CC900FFCAE9 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		6379794A28A839F200FFCAE9 /* PostDetailTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTitleTableViewCell.swift; sourceTree = "<group>"; };
+		6379794C28A839FC00FFCAE9 /* PostCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentTableViewCell.swift; sourceTree = "<group>"; };
+		6379794E28A83A0700FFCAE9 /* PostCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCommentTableViewCell.xib; sourceTree = "<group>"; };
+		6379795028A83A1100FFCAE9 /* PostDetailTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailTitleTableViewCell.xib; sourceTree = "<group>"; };
+		6379795228A84A9000FFCAE9 /* PostDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		6379795428A84AB900FFCAE9 /* PostDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		6379795628A84DAA00FFCAE9 /* PostUserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostUserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6379795828A84DDE00FFCAE9 /* PostUserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6379795A28A8502100FFCAE9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637978F928A7E68600FFCAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379790F28A7E68A00FFCAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379791928A7E68A00FFCAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		637978F328A7E68600FFCAE9 = {
+			isa = PBXGroup;
+			children = (
+				637978FE28A7E68600FFCAE9 /* DRPR Mobile Tech Test */,
+				6379791528A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests */,
+				6379791F28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests */,
+				637978FD28A7E68600FFCAE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		637978FD28A7E68600FFCAE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637978FC28A7E68600FFCAE9 /* DRPR Mobile Tech Test.app */,
+				6379791228A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests.xctest */,
+				6379791C28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637978FE28A7E68600FFCAE9 /* DRPR Mobile Tech Test */ = {
+			isa = PBXGroup;
+			children = (
+				637978FF28A7E68600FFCAE9 /* AppDelegate.swift */,
+				6379790128A7E68600FFCAE9 /* SceneDelegate.swift */,
+				6379790828A7E68A00FFCAE9 /* Assets.xcassets */,
+				6379790A28A7E68A00FFCAE9 /* LaunchScreen.storyboard */,
+				6379794128A8228600FFCAE9 /* Main.storyboard */,
+				6379790D28A7E68A00FFCAE9 /* Info.plist */,
+				6379793728A819BD00FFCAE9 /* Extensions */,
+				6379793228A80DC400FFCAE9 /* Resources */,
+				6379792F28A80CC500FFCAE9 /* Model */,
+				6379793E28A81AE200FFCAE9 /* Posts */,
+				6379794728A82CA200FFCAE9 /* Post Detail */,
+			);
+			path = "DRPR Mobile Tech Test";
+			sourceTree = "<group>";
+		};
+		6379791528A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6379791628A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestTests.swift */,
+			);
+			path = "DRPR Mobile Tech TestTests";
+			sourceTree = "<group>";
+		};
+		6379791F28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6379792028A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITests.swift */,
+				6379792228A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITestsLaunchTests.swift */,
+			);
+			path = "DRPR Mobile Tech TestUITests";
+			sourceTree = "<group>";
+		};
+		6379792F28A80CC500FFCAE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6379793028A80CDB00FFCAE9 /* PostModel.swift */,
+				6379795A28A8502100FFCAE9 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6379793228A80DC400FFCAE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6379793528A8141B00FFCAE9 /* JSONAPI.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6379793728A819BD00FFCAE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6379793828A819C700FFCAE9 /* ErrorExtensions.swift */,
+				6379793A28A81A3900FFCAE9 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6379793E28A81AE200FFCAE9 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				6379793C28A81A9B00FFCAE9 /* PostsViewController.swift */,
+				6379793F28A81B0700FFCAE9 /* Post.swift */,
+				6379794528A823BA00FFCAE9 /* PostTableViewCell.swift */,
+				6379794328A8236600FFCAE9 /* PostTableViewCell.xib */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		6379794728A82CA200FFCAE9 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6379794828A82CC900FFCAE9 /* PostDetailViewController.swift */,
+				6379794A28A839F200FFCAE9 /* PostDetailTitleTableViewCell.swift */,
+				6379794C28A839FC00FFCAE9 /* PostCommentTableViewCell.swift */,
+				6379795428A84AB900FFCAE9 /* PostDescriptionTableViewCell.swift */,
+				6379795828A84DDE00FFCAE9 /* PostUserInfoTableViewCell.swift */,
+				6379795228A84A9000FFCAE9 /* PostDescriptionTableViewCell.xib */,
+				6379794E28A83A0700FFCAE9 /* PostCommentTableViewCell.xib */,
+				6379795028A83A1100FFCAE9 /* PostDetailTitleTableViewCell.xib */,
+				6379795628A84DAA00FFCAE9 /* PostUserInfoTableViewCell.xib */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637978FB28A7E68600FFCAE9 /* DRPR Mobile Tech Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6379792628A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech Test" */;
+			buildPhases = (
+				637978F828A7E68600FFCAE9 /* Sources */,
+				637978F928A7E68600FFCAE9 /* Frameworks */,
+				637978FA28A7E68600FFCAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DRPR Mobile Tech Test";
+			productName = "DRPR Mobile Tech Test";
+			productReference = 637978FC28A7E68600FFCAE9 /* DRPR Mobile Tech Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6379791128A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6379792928A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech TestTests" */;
+			buildPhases = (
+				6379790E28A7E68A00FFCAE9 /* Sources */,
+				6379790F28A7E68A00FFCAE9 /* Frameworks */,
+				6379791028A7E68A00FFCAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6379791428A7E68A00FFCAE9 /* PBXTargetDependency */,
+			);
+			name = "DRPR Mobile Tech TestTests";
+			productName = "DRPR Mobile Tech TestTests";
+			productReference = 6379791228A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6379791B28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6379792C28A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech TestUITests" */;
+			buildPhases = (
+				6379791828A7E68A00FFCAE9 /* Sources */,
+				6379791928A7E68A00FFCAE9 /* Frameworks */,
+				6379791A28A7E68A00FFCAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6379791E28A7E68A00FFCAE9 /* PBXTargetDependency */,
+			);
+			name = "DRPR Mobile Tech TestUITests";
+			productName = "DRPR Mobile Tech TestUITests";
+			productReference = 6379791C28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637978F428A7E68600FFCAE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					637978FB28A7E68600FFCAE9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					6379791128A7E68A00FFCAE9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 637978FB28A7E68600FFCAE9;
+					};
+					6379791B28A7E68A00FFCAE9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 637978FB28A7E68600FFCAE9;
+					};
+				};
+			};
+			buildConfigurationList = 637978F728A7E68600FFCAE9 /* Build configuration list for PBXProject "DRPR Mobile Tech Test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 637978F328A7E68600FFCAE9;
+			productRefGroup = 637978FD28A7E68600FFCAE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637978FB28A7E68600FFCAE9 /* DRPR Mobile Tech Test */,
+				6379791128A7E68A00FFCAE9 /* DRPR Mobile Tech TestTests */,
+				6379791B28A7E68A00FFCAE9 /* DRPR Mobile Tech TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637978FA28A7E68600FFCAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6379794228A8228600FFCAE9 /* Main.storyboard in Resources */,
+				6379795328A84A9000FFCAE9 /* PostDescriptionTableViewCell.xib in Resources */,
+				6379795728A84DAA00FFCAE9 /* PostUserInfoTableViewCell.xib in Resources */,
+				6379794F28A83A0700FFCAE9 /* PostCommentTableViewCell.xib in Resources */,
+				6379795128A83A1100FFCAE9 /* PostDetailTitleTableViewCell.xib in Resources */,
+				6379790C28A7E68A00FFCAE9 /* LaunchScreen.storyboard in Resources */,
+				6379790928A7E68A00FFCAE9 /* Assets.xcassets in Resources */,
+				6379794428A8236600FFCAE9 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379791028A7E68A00FFCAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379791A28A7E68A00FFCAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637978F828A7E68600FFCAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6379793628A8141B00FFCAE9 /* JSONAPI.swift in Sources */,
+				6379793928A819C700FFCAE9 /* ErrorExtensions.swift in Sources */,
+				6379795928A84DDE00FFCAE9 /* PostUserInfoTableViewCell.swift in Sources */,
+				6379793128A80CDB00FFCAE9 /* PostModel.swift in Sources */,
+				6379794028A81B0700FFCAE9 /* Post.swift in Sources */,
+				6379793D28A81A9B00FFCAE9 /* PostsViewController.swift in Sources */,
+				6379795528A84AB900FFCAE9 /* PostDescriptionTableViewCell.swift in Sources */,
+				6379790028A7E68600FFCAE9 /* AppDelegate.swift in Sources */,
+				6379790228A7E68600FFCAE9 /* SceneDelegate.swift in Sources */,
+				6379794928A82CC900FFCAE9 /* PostDetailViewController.swift in Sources */,
+				6379794B28A839F200FFCAE9 /* PostDetailTitleTableViewCell.swift in Sources */,
+				6379794D28A839FC00FFCAE9 /* PostCommentTableViewCell.swift in Sources */,
+				6379793B28A81A3900FFCAE9 /* Extensions.swift in Sources */,
+				6379795B28A8502100FFCAE9 /* UserModel.swift in Sources */,
+				6379794628A823BA00FFCAE9 /* PostTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379790E28A7E68A00FFCAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6379791728A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6379791828A7E68A00FFCAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6379792328A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITestsLaunchTests.swift in Sources */,
+				6379792128A7E68A00FFCAE9 /* DRPR_Mobile_Tech_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6379791428A7E68A00FFCAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637978FB28A7E68600FFCAE9 /* DRPR Mobile Tech Test */;
+			targetProxy = 6379791328A7E68A00FFCAE9 /* PBXContainerItemProxy */;
+		};
+		6379791E28A7E68A00FFCAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637978FB28A7E68600FFCAE9 /* DRPR Mobile Tech Test */;
+			targetProxy = 6379791D28A7E68A00FFCAE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6379790A28A7E68A00FFCAE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6379790B28A7E68A00FFCAE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6379792428A7E68A00FFCAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6379792528A7E68A00FFCAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6379792728A7E68A00FFCAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DRPR Mobile Tech Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6379792828A7E68A00FFCAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DRPR Mobile Tech Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6379792A28A7E68A00FFCAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DRPR Mobile Tech Test.app/DRPR Mobile Tech Test";
+			};
+			name = Debug;
+		};
+		6379792B28A7E68A00FFCAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DRPR Mobile Tech Test.app/DRPR Mobile Tech Test";
+			};
+			name = Release;
+		};
+		6379792D28A7E68A00FFCAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DRPR Mobile Tech Test";
+			};
+			name = Debug;
+		};
+		6379792E28A7E68A00FFCAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ND32JB96T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "drpr.DRPR-Mobile-Tech-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DRPR Mobile Tech Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637978F728A7E68600FFCAE9 /* Build configuration list for PBXProject "DRPR Mobile Tech Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6379792428A7E68A00FFCAE9 /* Debug */,
+				6379792528A7E68A00FFCAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6379792628A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6379792728A7E68A00FFCAE9 /* Debug */,
+				6379792828A7E68A00FFCAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6379792928A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6379792A28A7E68A00FFCAE9 /* Debug */,
+				6379792B28A7E68A00FFCAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6379792C28A7E68A00FFCAE9 /* Build configuration list for PBXNativeTarget "DRPR Mobile Tech TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6379792D28A7E68A00FFCAE9 /* Debug */,
+				6379792E28A7E68A00FFCAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 637978F428A7E68600FFCAE9 /* Project object */;
+}

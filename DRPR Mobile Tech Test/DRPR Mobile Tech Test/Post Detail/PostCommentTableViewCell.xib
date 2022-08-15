@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="ECD-Zg-IQ0" customClass="PostCommentTableViewCell" customModule="DRPR_Mobile_Tech_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ECD-Zg-IQ0" id="00V-cV-R1j">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-q4-rP9">
+                        <rect key="frame" x="20" y="11" width="374" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="wn8-J8-5n0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzF-ks-sni">
+                        <rect key="frame" x="20" y="31" width="374" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="h7Y-ta-00w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="fzF-ks-sni" secondAttribute="bottom" id="17m-J8-6eh"/>
+                    <constraint firstItem="vPg-q4-rP9" firstAttribute="top" secondItem="00V-cV-R1j" secondAttribute="topMargin" id="2ia-OC-C5h"/>
+                    <constraint firstItem="fzF-ks-sni" firstAttribute="top" secondItem="vPg-q4-rP9" secondAttribute="bottom" id="O5T-ai-IlL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vPg-q4-rP9" secondAttribute="trailing" id="VQp-tu-KHh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fzF-ks-sni" secondAttribute="trailing" id="VZJ-Qn-TNJ"/>
+                    <constraint firstItem="fzF-ks-sni" firstAttribute="leading" secondItem="00V-cV-R1j" secondAttribute="leadingMargin" id="XVd-pm-IG2"/>
+                    <constraint firstItem="vPg-q4-rP9" firstAttribute="leading" secondItem="00V-cV-R1j" secondAttribute="leadingMargin" id="jfb-Fs-7i5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="fzF-ks-sni" id="DXv-zY-k3m"/>
+                <outlet property="emailLabel" destination="vPg-q4-rP9" id="ppa-yy-og4"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="76.339285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
